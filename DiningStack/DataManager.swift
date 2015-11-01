@@ -112,7 +112,7 @@ enum DataError: ErrorType {
 public class DataManager: NSObject {
     
     /// List of all the Dining Locations with parsed events and menus
-    private (set) var eateries: [Eatery] = []
+    private (set) public var eateries: [Eatery] = []
     
     /// Gives a shared instance of `DataManager`
     public static let sharedInstance = DataManager()
