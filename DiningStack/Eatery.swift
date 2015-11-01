@@ -77,13 +77,7 @@ public class Eatery: NSObject {
     
     /// Exact Address
     public let address: String
-    
-    /// Preview Image of the eatery such as a logo
-    public let image: UIImage?
-    
-    /// Photo of the facility
-    public let photo: UIImage?
-    
+
     /// Acceptable types of payment
     public let paymentMethods: [PaymentType]
     
@@ -127,8 +121,6 @@ public class Eatery: NSObject {
         slug  = json[APIKey.Slug.rawValue].stringValue
         about = json[APIKey.AboutShort.rawValue].stringValue
         phone = json[APIKey.PhoneNumber.rawValue].stringValue
-        image = UIImage(named: slug + "+logo.jpg", inBundle: kFrameworkBundle, compatibleWithTraitCollection: nil)
-        photo = UIImage(named: slug + ".jpg", inBundle: kFrameworkBundle, compatibleWithTraitCollection: nil)
         
         //TODO: make the below line safe
         area     = Area(rawValue: json[APIKey.CampusArea.rawValue][APIKey.ShortDescription.rawValue].stringValue)!

@@ -16,59 +16,6 @@
 		FAF5CFE01BE19E2C00C49EDE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF5CFD21BE19E1D00C49EDE /* SwiftyJSON.framework */; };
 		FAF5CFE41BE19EAE00C49EDE /* GeneralMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5CFE31BE19EAE00C49EDE /* GeneralMenus.swift */; };
 		FAF5CFE61BE19F1500C49EDE /* hardcodedMenus.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFE51BE19F1500C49EDE /* hardcodedMenus.json */; };
-		FAF5D01D1BE1A33A00C49EDE /* 104-West+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFE81BE1A33A00C49EDE /* 104-West+logo.jpg */; };
-		FAF5D01E1BE1A33A00C49EDE /* 104west.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFE91BE1A33A00C49EDE /* 104west.jpg */; };
-		FAF5D01F1BE1A33A00C49EDE /* Amit-Bhatia-Libe-Cafe+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFEA1BE1A33A00C49EDE /* Amit-Bhatia-Libe-Cafe+logo.jpg */; };
-		FAF5D0201BE1A33A00C49EDE /* amit-bhatia-libe-cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFEB1BE1A33A00C49EDE /* amit-bhatia-libe-cafe.jpg */; };
-		FAF5D0211BE1A33A00C49EDE /* Atrium-Cafe+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFEC1BE1A33A00C49EDE /* Atrium-Cafe+logo.jpg */; };
-		FAF5D0221BE1A33A00C49EDE /* atrium-cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFED1BE1A33A00C49EDE /* atrium-cafe.jpg */; };
-		FAF5D0231BE1A33A00C49EDE /* Bear-Necessities+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFEE1BE1A33A00C49EDE /* Bear-Necessities+logo.jpg */; };
-		FAF5D0241BE1A33A00C49EDE /* bear-necessities.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFEF1BE1A33A00C49EDE /* bear-necessities.jpg */; };
-		FAF5D0251BE1A33A00C49EDE /* Bears-Den+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFF01BE1A33A00C49EDE /* Bears-Den+logo.jpg */; };
-		FAF5D0261BE1A33A00C49EDE /* bears-den.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFF11BE1A33A00C49EDE /* bears-den.jpg */; };
-		FAF5D0271BE1A33A00C49EDE /* Becker-House-Dining+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFF21BE1A33A00C49EDE /* Becker-House-Dining+logo.jpg */; };
-		FAF5D0281BE1A33A00C49EDE /* becker-house-dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFF31BE1A33A00C49EDE /* becker-house-dining.jpg */; };
-		FAF5D0291BE1A33A00C49EDE /* Big-Red-Barn+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFF41BE1A33A00C49EDE /* Big-Red-Barn+logo.jpg */; };
-		FAF5D02A1BE1A33A00C49EDE /* big-red-barn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFF51BE1A33A00C49EDE /* big-red-barn.jpg */; };
-		FAF5D02B1BE1A33A00C49EDE /* Bug-Stop-Bagels+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFF61BE1A33A00C49EDE /* Bug-Stop-Bagels+logo.jpg */; };
-		FAF5D02C1BE1A33A00C49EDE /* Cafe-Jennie+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFF71BE1A33A00C49EDE /* Cafe-Jennie+logo.jpg */; };
-		FAF5D02D1BE1A33A00C49EDE /* cafe-jennie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFF81BE1A33A00C49EDE /* cafe-jennie.jpg */; };
-		FAF5D02E1BE1A33A00C49EDE /* Carols-Cafe+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFF91BE1A33A00C49EDE /* Carols-Cafe+logo.jpg */; };
-		FAF5D02F1BE1A33A00C49EDE /* carols-cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFFA1BE1A33A00C49EDE /* carols-cafe.jpg */; };
-		FAF5D0301BE1A33A00C49EDE /* Cascadeli+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFFB1BE1A33A00C49EDE /* Cascadeli+logo.jpg */; };
-		FAF5D0311BE1A33A00C49EDE /* cascadeli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFFC1BE1A33A00C49EDE /* cascadeli.jpg */; };
-		FAF5D0321BE1A33A00C49EDE /* Cook-House-Dining+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFFD1BE1A33A00C49EDE /* Cook-House-Dining+logo.jpg */; };
-		FAF5D0331BE1A33A00C49EDE /* cook-house-dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFFE1BE1A33A00C49EDE /* cook-house-dining.jpg */; };
-		FAF5D0341BE1A33A00C49EDE /* Cornell-Dairy-Bar+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFFF1BE1A33A00C49EDE /* Cornell-Dairy-Bar+logo.jpg */; };
-		FAF5D0351BE1A33A00C49EDE /* cornell-dairy-bar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0001BE1A33A00C49EDE /* cornell-dairy-bar.jpg */; };
-		FAF5D0361BE1A33A00C49EDE /* Goldies-Cafe+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0011BE1A33A00C49EDE /* Goldies-Cafe+logo.jpg */; };
-		FAF5D0371BE1A33A00C49EDE /* Goldies-Cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0021BE1A33A00C49EDE /* Goldies-Cafe.jpg */; };
-		FAF5D0381BE1A33A00C49EDE /* Green-Dragon+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0031BE1A33A00C49EDE /* Green-Dragon+logo.jpg */; };
-		FAF5D0391BE1A33A00C49EDE /* green-dragon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0041BE1A33A00C49EDE /* green-dragon.jpg */; };
-		FAF5D03A1BE1A33A00C49EDE /* Ivy-Room+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0051BE1A33A00C49EDE /* Ivy-Room+logo.jpg */; };
-		FAF5D03B1BE1A33A00C49EDE /* Ivy-Room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0061BE1A33A00C49EDE /* Ivy-Room.jpg */; };
-		FAF5D03C1BE1A33A00C49EDE /* Janens-Dining+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0071BE1A33A00C49EDE /* Janens-Dining+logo.jpg */; };
-		FAF5D03D1BE1A33A00C49EDE /* jansens-dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0081BE1A33A00C49EDE /* jansens-dining.jpg */; };
-		FAF5D03E1BE1A33A00C49EDE /* Keeton-House-Dining+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0091BE1A33A00C49EDE /* Keeton-House-Dining+logo.jpg */; };
-		FAF5D03F1BE1A33A00C49EDE /* keeton-house-dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D00A1BE1A33A00C49EDE /* keeton-house-dining.jpg */; };
-		FAF5D0401BE1A33A00C49EDE /* Marthas-Cafe+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D00B1BE1A33A00C49EDE /* Marthas-Cafe+logo.jpg */; };
-		FAF5D0411BE1A33A00C49EDE /* marthas-cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D00C1BE1A33A00C49EDE /* marthas-cafe.jpg */; };
-		FAF5D0421BE1A33A00C49EDE /* Mattins-Cafe+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D00D1BE1A33A00C49EDE /* Mattins-Cafe+logo.jpg */; };
-		FAF5D0431BE1A33A00C49EDE /* mattins-cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D00E1BE1A33A00C49EDE /* mattins-cafe.jpg */; };
-		FAF5D0441BE1A33A00C49EDE /* North-Star+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D00F1BE1A33A00C49EDE /* North-Star+logo.jpg */; };
-		FAF5D0451BE1A33A00C49EDE /* Okenshields+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0101BE1A33A00C49EDE /* Okenshields+logo.jpg */; };
-		FAF5D0461BE1A33A00C49EDE /* Risley-Dining+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0111BE1A33A00C49EDE /* Risley-Dining+logo.jpg */; };
-		FAF5D0471BE1A33A00C49EDE /* risley-dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0121BE1A33A00C49EDE /* risley-dining.jpg */; };
-		FAF5D0481BE1A33A00C49EDE /* Rose-House-Dining+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0131BE1A33A00C49EDE /* Rose-House-Dining+logo.jpg */; };
-		FAF5D0491BE1A33A00C49EDE /* rose-house-dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0141BE1A33A00C49EDE /* rose-house-dining.jpg */; };
-		FAF5D04A1BE1A33A00C49EDE /* RPCC-Marketplace+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0151BE1A33A00C49EDE /* RPCC-Marketplace+logo.jpg */; };
-		FAF5D04B1BE1A33A00C49EDE /* rpcc-marketplace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0161BE1A33A00C49EDE /* rpcc-marketplace.jpg */; };
-		FAF5D04C1BE1A33A00C49EDE /* Rustys+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0171BE1A33A00C49EDE /* Rustys+logo.jpg */; };
-		FAF5D04D1BE1A33A00C49EDE /* rustys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0181BE1A33A00C49EDE /* rustys.jpg */; };
-		FAF5D04E1BE1A33A00C49EDE /* Synapsis-Cafe+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D0191BE1A33A00C49EDE /* Synapsis-Cafe+logo.jpg */; };
-		FAF5D04F1BE1A33A00C49EDE /* synapsis-cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D01A1BE1A33A00C49EDE /* synapsis-cafe.jpg */; };
-		FAF5D0501BE1A33A00C49EDE /* Trillium+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D01B1BE1A33A00C49EDE /* Trillium+logo.jpg */; };
-		FAF5D0511BE1A33A00C49EDE /* trillium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5D01C1BE1A33A00C49EDE /* trillium.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,59 +131,6 @@
 		FAF5CFC71BE19E1D00C49EDE /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = external/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		FAF5CFE31BE19EAE00C49EDE /* GeneralMenus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMenus.swift; sourceTree = "<group>"; };
 		FAF5CFE51BE19F1500C49EDE /* hardcodedMenus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hardcodedMenus.json; sourceTree = "<group>"; };
-		FAF5CFE81BE1A33A00C49EDE /* 104-West+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "104-West+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFE91BE1A33A00C49EDE /* 104west.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 104west.jpg; sourceTree = "<group>"; };
-		FAF5CFEA1BE1A33A00C49EDE /* Amit-Bhatia-Libe-Cafe+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amit-Bhatia-Libe-Cafe+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFEB1BE1A33A00C49EDE /* amit-bhatia-libe-cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "amit-bhatia-libe-cafe.jpg"; sourceTree = "<group>"; };
-		FAF5CFEC1BE1A33A00C49EDE /* Atrium-Cafe+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Atrium-Cafe+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFED1BE1A33A00C49EDE /* atrium-cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "atrium-cafe.jpg"; sourceTree = "<group>"; };
-		FAF5CFEE1BE1A33A00C49EDE /* Bear-Necessities+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bear-Necessities+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFEF1BE1A33A00C49EDE /* bear-necessities.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bear-necessities.jpg"; sourceTree = "<group>"; };
-		FAF5CFF01BE1A33A00C49EDE /* Bears-Den+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bears-Den+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFF11BE1A33A00C49EDE /* bears-den.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bears-den.jpg"; sourceTree = "<group>"; };
-		FAF5CFF21BE1A33A00C49EDE /* Becker-House-Dining+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Becker-House-Dining+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFF31BE1A33A00C49EDE /* becker-house-dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "becker-house-dining.jpg"; sourceTree = "<group>"; };
-		FAF5CFF41BE1A33A00C49EDE /* Big-Red-Barn+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Big-Red-Barn+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFF51BE1A33A00C49EDE /* big-red-barn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "big-red-barn.jpg"; sourceTree = "<group>"; };
-		FAF5CFF61BE1A33A00C49EDE /* Bug-Stop-Bagels+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bug-Stop-Bagels+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFF71BE1A33A00C49EDE /* Cafe-Jennie+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cafe-Jennie+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFF81BE1A33A00C49EDE /* cafe-jennie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cafe-jennie.jpg"; sourceTree = "<group>"; };
-		FAF5CFF91BE1A33A00C49EDE /* Carols-Cafe+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Carols-Cafe+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFFA1BE1A33A00C49EDE /* carols-cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "carols-cafe.jpg"; sourceTree = "<group>"; };
-		FAF5CFFB1BE1A33A00C49EDE /* Cascadeli+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cascadeli+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFFC1BE1A33A00C49EDE /* cascadeli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cascadeli.jpg; sourceTree = "<group>"; };
-		FAF5CFFD1BE1A33A00C49EDE /* Cook-House-Dining+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cook-House-Dining+logo.jpg"; sourceTree = "<group>"; };
-		FAF5CFFE1BE1A33A00C49EDE /* cook-house-dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cook-house-dining.jpg"; sourceTree = "<group>"; };
-		FAF5CFFF1BE1A33A00C49EDE /* Cornell-Dairy-Bar+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cornell-Dairy-Bar+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0001BE1A33A00C49EDE /* cornell-dairy-bar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cornell-dairy-bar.jpg"; sourceTree = "<group>"; };
-		FAF5D0011BE1A33A00C49EDE /* Goldies-Cafe+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Goldies-Cafe+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0021BE1A33A00C49EDE /* Goldies-Cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Goldies-Cafe.jpg"; sourceTree = "<group>"; };
-		FAF5D0031BE1A33A00C49EDE /* Green-Dragon+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Green-Dragon+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0041BE1A33A00C49EDE /* green-dragon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "green-dragon.jpg"; sourceTree = "<group>"; };
-		FAF5D0051BE1A33A00C49EDE /* Ivy-Room+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ivy-Room+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0061BE1A33A00C49EDE /* Ivy-Room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ivy-Room.jpg"; sourceTree = "<group>"; };
-		FAF5D0071BE1A33A00C49EDE /* Janens-Dining+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Janens-Dining+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0081BE1A33A00C49EDE /* jansens-dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jansens-dining.jpg"; sourceTree = "<group>"; };
-		FAF5D0091BE1A33A00C49EDE /* Keeton-House-Dining+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Keeton-House-Dining+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D00A1BE1A33A00C49EDE /* keeton-house-dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "keeton-house-dining.jpg"; sourceTree = "<group>"; };
-		FAF5D00B1BE1A33A00C49EDE /* Marthas-Cafe+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Marthas-Cafe+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D00C1BE1A33A00C49EDE /* marthas-cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "marthas-cafe.jpg"; sourceTree = "<group>"; };
-		FAF5D00D1BE1A33A00C49EDE /* Mattins-Cafe+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mattins-Cafe+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D00E1BE1A33A00C49EDE /* mattins-cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mattins-cafe.jpg"; sourceTree = "<group>"; };
-		FAF5D00F1BE1A33A00C49EDE /* North-Star+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "North-Star+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0101BE1A33A00C49EDE /* Okenshields+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Okenshields+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0111BE1A33A00C49EDE /* Risley-Dining+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Risley-Dining+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0121BE1A33A00C49EDE /* risley-dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "risley-dining.jpg"; sourceTree = "<group>"; };
-		FAF5D0131BE1A33A00C49EDE /* Rose-House-Dining+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rose-House-Dining+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0141BE1A33A00C49EDE /* rose-house-dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rose-house-dining.jpg"; sourceTree = "<group>"; };
-		FAF5D0151BE1A33A00C49EDE /* RPCC-Marketplace+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RPCC-Marketplace+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0161BE1A33A00C49EDE /* rpcc-marketplace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rpcc-marketplace.jpg"; sourceTree = "<group>"; };
-		FAF5D0171BE1A33A00C49EDE /* Rustys+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rustys+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D0181BE1A33A00C49EDE /* rustys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rustys.jpg; sourceTree = "<group>"; };
-		FAF5D0191BE1A33A00C49EDE /* Synapsis-Cafe+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Synapsis-Cafe+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D01A1BE1A33A00C49EDE /* synapsis-cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "synapsis-cafe.jpg"; sourceTree = "<group>"; };
-		FAF5D01B1BE1A33A00C49EDE /* Trillium+logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Trillium+logo.jpg"; sourceTree = "<group>"; };
-		FAF5D01C1BE1A33A00C49EDE /* trillium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trillium.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,7 +172,6 @@
 				FAF5CE821BE19CAD00C49EDE /* MenuItem.swift */,
 				FAF5CE761BE19C6E00C49EDE /* DiningStack.h */,
 				FAF5CFE51BE19F1500C49EDE /* hardcodedMenus.json */,
-				FAF5CFE71BE1A33A00C49EDE /* Eatery Images */,
 				FAF5CFC71BE19E1D00C49EDE /* SwiftyJSON.xcodeproj */,
 				FAF5CFAF1BE19E0B00C49EDE /* Alamofire.xcodeproj */,
 				FAF5CE781BE19C6E00C49EDE /* Info.plist */,
@@ -312,66 +205,6 @@
 				FAF5CFDE1BE19E1D00C49EDE /* SwiftyJSON tvOS Tests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FAF5CFE71BE1A33A00C49EDE /* Eatery Images */ = {
-			isa = PBXGroup;
-			children = (
-				FAF5CFE81BE1A33A00C49EDE /* 104-West+logo.jpg */,
-				FAF5CFE91BE1A33A00C49EDE /* 104west.jpg */,
-				FAF5CFEA1BE1A33A00C49EDE /* Amit-Bhatia-Libe-Cafe+logo.jpg */,
-				FAF5CFEB1BE1A33A00C49EDE /* amit-bhatia-libe-cafe.jpg */,
-				FAF5CFEC1BE1A33A00C49EDE /* Atrium-Cafe+logo.jpg */,
-				FAF5CFED1BE1A33A00C49EDE /* atrium-cafe.jpg */,
-				FAF5CFEE1BE1A33A00C49EDE /* Bear-Necessities+logo.jpg */,
-				FAF5CFEF1BE1A33A00C49EDE /* bear-necessities.jpg */,
-				FAF5CFF01BE1A33A00C49EDE /* Bears-Den+logo.jpg */,
-				FAF5CFF11BE1A33A00C49EDE /* bears-den.jpg */,
-				FAF5CFF21BE1A33A00C49EDE /* Becker-House-Dining+logo.jpg */,
-				FAF5CFF31BE1A33A00C49EDE /* becker-house-dining.jpg */,
-				FAF5CFF41BE1A33A00C49EDE /* Big-Red-Barn+logo.jpg */,
-				FAF5CFF51BE1A33A00C49EDE /* big-red-barn.jpg */,
-				FAF5CFF61BE1A33A00C49EDE /* Bug-Stop-Bagels+logo.jpg */,
-				FAF5CFF71BE1A33A00C49EDE /* Cafe-Jennie+logo.jpg */,
-				FAF5CFF81BE1A33A00C49EDE /* cafe-jennie.jpg */,
-				FAF5CFF91BE1A33A00C49EDE /* Carols-Cafe+logo.jpg */,
-				FAF5CFFA1BE1A33A00C49EDE /* carols-cafe.jpg */,
-				FAF5CFFB1BE1A33A00C49EDE /* Cascadeli+logo.jpg */,
-				FAF5CFFC1BE1A33A00C49EDE /* cascadeli.jpg */,
-				FAF5CFFD1BE1A33A00C49EDE /* Cook-House-Dining+logo.jpg */,
-				FAF5CFFE1BE1A33A00C49EDE /* cook-house-dining.jpg */,
-				FAF5CFFF1BE1A33A00C49EDE /* Cornell-Dairy-Bar+logo.jpg */,
-				FAF5D0001BE1A33A00C49EDE /* cornell-dairy-bar.jpg */,
-				FAF5D0011BE1A33A00C49EDE /* Goldies-Cafe+logo.jpg */,
-				FAF5D0021BE1A33A00C49EDE /* Goldies-Cafe.jpg */,
-				FAF5D0031BE1A33A00C49EDE /* Green-Dragon+logo.jpg */,
-				FAF5D0041BE1A33A00C49EDE /* green-dragon.jpg */,
-				FAF5D0051BE1A33A00C49EDE /* Ivy-Room+logo.jpg */,
-				FAF5D0061BE1A33A00C49EDE /* Ivy-Room.jpg */,
-				FAF5D0071BE1A33A00C49EDE /* Janens-Dining+logo.jpg */,
-				FAF5D0081BE1A33A00C49EDE /* jansens-dining.jpg */,
-				FAF5D0091BE1A33A00C49EDE /* Keeton-House-Dining+logo.jpg */,
-				FAF5D00A1BE1A33A00C49EDE /* keeton-house-dining.jpg */,
-				FAF5D00B1BE1A33A00C49EDE /* Marthas-Cafe+logo.jpg */,
-				FAF5D00C1BE1A33A00C49EDE /* marthas-cafe.jpg */,
-				FAF5D00D1BE1A33A00C49EDE /* Mattins-Cafe+logo.jpg */,
-				FAF5D00E1BE1A33A00C49EDE /* mattins-cafe.jpg */,
-				FAF5D00F1BE1A33A00C49EDE /* North-Star+logo.jpg */,
-				FAF5D0101BE1A33A00C49EDE /* Okenshields+logo.jpg */,
-				FAF5D0111BE1A33A00C49EDE /* Risley-Dining+logo.jpg */,
-				FAF5D0121BE1A33A00C49EDE /* risley-dining.jpg */,
-				FAF5D0131BE1A33A00C49EDE /* Rose-House-Dining+logo.jpg */,
-				FAF5D0141BE1A33A00C49EDE /* rose-house-dining.jpg */,
-				FAF5D0151BE1A33A00C49EDE /* RPCC-Marketplace+logo.jpg */,
-				FAF5D0161BE1A33A00C49EDE /* rpcc-marketplace.jpg */,
-				FAF5D0171BE1A33A00C49EDE /* Rustys+logo.jpg */,
-				FAF5D0181BE1A33A00C49EDE /* rustys.jpg */,
-				FAF5D0191BE1A33A00C49EDE /* Synapsis-Cafe+logo.jpg */,
-				FAF5D01A1BE1A33A00C49EDE /* synapsis-cafe.jpg */,
-				FAF5D01B1BE1A33A00C49EDE /* Trillium+logo.jpg */,
-				FAF5D01C1BE1A33A00C49EDE /* trillium.jpg */,
-			);
-			path = "Eatery Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,60 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF5D0291BE1A33A00C49EDE /* Big-Red-Barn+logo.jpg in Resources */,
-				FAF5D0341BE1A33A00C49EDE /* Cornell-Dairy-Bar+logo.jpg in Resources */,
-				FAF5D0311BE1A33A00C49EDE /* cascadeli.jpg in Resources */,
-				FAF5D0411BE1A33A00C49EDE /* marthas-cafe.jpg in Resources */,
-				FAF5D04A1BE1A33A00C49EDE /* RPCC-Marketplace+logo.jpg in Resources */,
-				FAF5D0511BE1A33A00C49EDE /* trillium.jpg in Resources */,
-				FAF5D0281BE1A33A00C49EDE /* becker-house-dining.jpg in Resources */,
-				FAF5D02F1BE1A33A00C49EDE /* carols-cafe.jpg in Resources */,
-				FAF5D0501BE1A33A00C49EDE /* Trillium+logo.jpg in Resources */,
-				FAF5D0241BE1A33A00C49EDE /* bear-necessities.jpg in Resources */,
-				FAF5D04E1BE1A33A00C49EDE /* Synapsis-Cafe+logo.jpg in Resources */,
-				FAF5D0201BE1A33A00C49EDE /* amit-bhatia-libe-cafe.jpg in Resources */,
-				FAF5D0361BE1A33A00C49EDE /* Goldies-Cafe+logo.jpg in Resources */,
-				FAF5D03E1BE1A33A00C49EDE /* Keeton-House-Dining+logo.jpg in Resources */,
-				FAF5D0271BE1A33A00C49EDE /* Becker-House-Dining+logo.jpg in Resources */,
-				FAF5D0481BE1A33A00C49EDE /* Rose-House-Dining+logo.jpg in Resources */,
-				FAF5D03D1BE1A33A00C49EDE /* jansens-dining.jpg in Resources */,
-				FAF5D0331BE1A33A00C49EDE /* cook-house-dining.jpg in Resources */,
-				FAF5D0391BE1A33A00C49EDE /* green-dragon.jpg in Resources */,
-				FAF5D0401BE1A33A00C49EDE /* Marthas-Cafe+logo.jpg in Resources */,
-				FAF5D0491BE1A33A00C49EDE /* rose-house-dining.jpg in Resources */,
-				FAF5D0421BE1A33A00C49EDE /* Mattins-Cafe+logo.jpg in Resources */,
-				FAF5D0371BE1A33A00C49EDE /* Goldies-Cafe.jpg in Resources */,
-				FAF5D02E1BE1A33A00C49EDE /* Carols-Cafe+logo.jpg in Resources */,
-				FAF5D03A1BE1A33A00C49EDE /* Ivy-Room+logo.jpg in Resources */,
-				FAF5D0431BE1A33A00C49EDE /* mattins-cafe.jpg in Resources */,
 				FAF5CFE61BE19F1500C49EDE /* hardcodedMenus.json in Resources */,
-				FAF5D0231BE1A33A00C49EDE /* Bear-Necessities+logo.jpg in Resources */,
-				FAF5D03C1BE1A33A00C49EDE /* Janens-Dining+logo.jpg in Resources */,
-				FAF5D0321BE1A33A00C49EDE /* Cook-House-Dining+logo.jpg in Resources */,
-				FAF5D04D1BE1A33A00C49EDE /* rustys.jpg in Resources */,
-				FAF5D04C1BE1A33A00C49EDE /* Rustys+logo.jpg in Resources */,
-				FAF5D04F1BE1A33A00C49EDE /* synapsis-cafe.jpg in Resources */,
-				FAF5D02D1BE1A33A00C49EDE /* cafe-jennie.jpg in Resources */,
-				FAF5D0461BE1A33A00C49EDE /* Risley-Dining+logo.jpg in Resources */,
-				FAF5D0441BE1A33A00C49EDE /* North-Star+logo.jpg in Resources */,
-				FAF5D02A1BE1A33A00C49EDE /* big-red-barn.jpg in Resources */,
-				FAF5D01E1BE1A33A00C49EDE /* 104west.jpg in Resources */,
-				FAF5D02C1BE1A33A00C49EDE /* Cafe-Jennie+logo.jpg in Resources */,
-				FAF5D04B1BE1A33A00C49EDE /* rpcc-marketplace.jpg in Resources */,
-				FAF5D0471BE1A33A00C49EDE /* risley-dining.jpg in Resources */,
-				FAF5D0211BE1A33A00C49EDE /* Atrium-Cafe+logo.jpg in Resources */,
-				FAF5D0301BE1A33A00C49EDE /* Cascadeli+logo.jpg in Resources */,
-				FAF5D0251BE1A33A00C49EDE /* Bears-Den+logo.jpg in Resources */,
-				FAF5D0221BE1A33A00C49EDE /* atrium-cafe.jpg in Resources */,
-				FAF5D0381BE1A33A00C49EDE /* Green-Dragon+logo.jpg in Resources */,
-				FAF5D01D1BE1A33A00C49EDE /* 104-West+logo.jpg in Resources */,
-				FAF5D0261BE1A33A00C49EDE /* bears-den.jpg in Resources */,
-				FAF5D03F1BE1A33A00C49EDE /* keeton-house-dining.jpg in Resources */,
-				FAF5D0351BE1A33A00C49EDE /* cornell-dairy-bar.jpg in Resources */,
-				FAF5D03B1BE1A33A00C49EDE /* Ivy-Room.jpg in Resources */,
-				FAF5D01F1BE1A33A00C49EDE /* Amit-Bhatia-Libe-Cafe+logo.jpg in Resources */,
-				FAF5D0451BE1A33A00C49EDE /* Okenshields+logo.jpg in Resources */,
-				FAF5D02B1BE1A33A00C49EDE /* Bug-Stop-Bagels+logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
