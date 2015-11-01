@@ -14,8 +14,6 @@
 		FAF5CE851BE19CAD00C49EDE /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5CE821BE19CAD00C49EDE /* MenuItem.swift */; };
 		FAF5CFDF1BE19E2900C49EDE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF5CFBA1BE19E0B00C49EDE /* Alamofire.framework */; };
 		FAF5CFE01BE19E2C00C49EDE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF5CFD21BE19E1D00C49EDE /* SwiftyJSON.framework */; };
-		FAF5CFE11BE19E3600C49EDE /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAF5CFBA1BE19E0B00C49EDE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FAF5CFE21BE19E3A00C49EDE /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAF5CFD21BE19E1D00C49EDE /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAF5CFE41BE19EAE00C49EDE /* GeneralMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5CFE31BE19EAE00C49EDE /* GeneralMenus.swift */; };
 		FAF5CFE61BE19F1500C49EDE /* hardcodedMenus.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFE51BE19F1500C49EDE /* hardcodedMenus.json */; };
 		FAF5D01D1BE1A33A00C49EDE /* 104-West+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFE81BE1A33A00C49EDE /* 104-West+logo.jpg */; };
@@ -173,21 +171,6 @@
 			remoteInfo = "SwiftyJSON tvOS Tests";
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FAF5CFAC1BE19DCE00C49EDE /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FAF5CFE11BE19E3600C49EDE /* Alamofire.framework in Copy Frameworks */,
-				FAF5CFE21BE19E3A00C49EDE /* SwiftyJSON.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FAF5CE731BE19C6E00C49EDE /* DiningStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiningStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -413,7 +396,6 @@
 				FAF5CE6F1BE19C6E00C49EDE /* Frameworks */,
 				FAF5CE701BE19C6E00C49EDE /* Headers */,
 				FAF5CE711BE19C6E00C49EDE /* Resources */,
-				FAF5CFAC1BE19DCE00C49EDE /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
