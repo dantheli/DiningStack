@@ -790,6 +790,7 @@
 				FAF5CE7D1BE19C6E00C49EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

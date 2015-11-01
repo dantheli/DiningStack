@@ -9,10 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-internal let kMenuNotAvailable = "Menu not available."
-internal let kGeneralMealTypeName = "Menu"
-internal let kMenuCategoryName = "General"
-
 internal let kFrameworkBundle = NSBundle(identifier: "org.cuappdev.DiningStack")!
 
+/// Hardcoded menus for those which would not normally have them
 internal let kEateryGeneralMenus = JSON(data: NSData(contentsOfURL: kFrameworkBundle.URLForResource("hardcodedMenus", withExtension: "json")!) ?? NSData()).dictionaryValue

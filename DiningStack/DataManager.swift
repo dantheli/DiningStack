@@ -12,7 +12,6 @@ import SwiftyJSON
 
 let separator = ":------------------------------------------"
 
-
 /**
 Router Endpoints enum
 */
@@ -35,9 +34,9 @@ internal enum Router: URLStringConvertible {
 }
 
 /**
-Keys for Cornell API
+    Keys for Cornell API
+    These will be in the response dictionary
 */
-
 internal enum APIKey : String {
     // Top Level
     case Status    = "status"
@@ -90,27 +89,50 @@ internal enum APIKey : String {
     case Timestamp = "responseDttm"
 }
 
+/**
+ Enumerated Server Response
+ 
+ - Success: String for the status if the request was a success.
+ */
 enum Status: String {
     case Success = "success"
 }
 
+/**
+ Error Types
+ 
+ - ServerError: An error arose from the server-side of things
+ */
 enum DataError: ErrorType {
     case ServerError
 }
 
+
+/// Top-level class to communicate with Cornell Dining
 public class DataManager: NSObject {
-        
+    
+    /// List of all the Dining Locations with parsed events and menus
     private (set) var eateries: [Eatery] = []
     
+    /// Gives a shared instance of `DataManager`
     public static let sharedInstance = DataManager()
     
+    /**
+     Sends a GET request to the Cornell API to get the events
+     for all eateries.
+     
+     - parameter force:      Boolean indicating that the data should be refreshed even if
+             the cache is invalid.
+     - parameter completion: Completion block called upon successful receipt and parsing
+         of the data or with an error if there was one. Use `-eateries` to get the parsed
+         response.
+     */
     public func fetchEateries(force: Bool, completion: ((error: ErrorType?) -> (Void))?) {
         if eateries.count > 0 && !force {
             completion?(error: nil)
             return
         }
         
-        print("requesting eatery info")
         let req = Alamofire.request(.GET, Router.Eateries)
 
         func processData (data: NSData) {
@@ -118,10 +140,8 @@ public class DataManager: NSObject {
             
             
             let json = JSON(data: data)
-            print("\n");
             
             if (json[APIKey.Status.rawValue].stringValue != Status.Success.rawValue) {
-                print("Got server error!\n")
                 completion?(error: DataError.ServerError)
                 // do something is message
                 return
@@ -159,8 +179,6 @@ public class DataManager: NSObject {
             let request = resp.request
             let response = resp.response
             
-            print("received server response")
-            
             if let data = data.value,
                 response = response,
                 request = request {
@@ -172,7 +190,6 @@ public class DataManager: NSObject {
                 processData(jsonData)
                 
             } else {
-                print("Failed to get parsed response!\n")
                 completion?(error: data.error)
             }
 

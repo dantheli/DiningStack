@@ -10,6 +10,17 @@ import UIKit
 import SwiftyJSON
 import CoreLocation
 
+/**
+ Assorted types of payment accepted by an Eatery
+ 
+ - BRB:         Big Red Bucks
+ - Swipes:      Meal Swipes
+ - Cash:        USD
+ - CornellCard: CornellCard
+ - CreditCard:  Major Credit Cards
+ - NFC:         Mobile Payments
+ - Other:       Unknown
+ */
 public enum PaymentType: String {
     case BRB         = "Meal Plan - Debit"
     case Swipes      = "Meal Plan - Swipe"
@@ -20,6 +31,14 @@ public enum PaymentType: String {
     case Other       = ""
 }
 
+/**
+ Represents a location on Cornell Campus
+ 
+ - Unknown: Unknown
+ - West:    West Campus
+ - North:   North Campus
+ - Central: Central Campus
+ */
 public enum Area: String {
     case Unknown = ""
     case West    = "West"
@@ -33,29 +52,55 @@ private func makeFormatter () -> NSDateFormatter {
     return formatter
 }
 
+/// Represents a Cornell Dining Facility and information about it
+/// such as open times, menus, location, etc.
 public class Eatery: NSObject {
     private static let dateFormatter = makeFormatter()
 
+    /// Unique Identifier
     public let id: Int
+    
+    /// Human Readable name
     public let name: String
+    
+    /// Unique internal name
     public let slug: String
+    
+    /// Short description
     public let about: String // actually "aboutshort"
+    
+    /// String representation of the phone number
     public let phone: String
+    
+    /// General location on Campus
     public let area: Area
+    
+    /// Exact Address
     public let address: String
+    
+    /// Preview Image of the eatery such as a logo
     public let image: UIImage?
+    
+    /// Photo of the facility
     public let photo: UIImage?
+    
+    /// Acceptable types of payment
     public let paymentMethods: [PaymentType]
     
+    /// A constant hardcoded menu if this Eatery has one.
+    /// You should be using this menu for all events if it exists
     public let hardcodedMenu: [String: [MenuItem]]?
     
+    /// GPS Location
     let location: CLLocation
-    
-    var favorite = false
     
     // Maps 2015-03-01 to [Event]
     // Thought about using just an array, but
     // for many events, this is much faster for lookups
+    /// List of all events for this eatery
+    /// Maps the date the event occurs to a list of the event name
+    /// to the event itself e.g.:
+    /// [ "2015-03-01": ["Lunch": Event]]
     private(set) var events: [String: [String: Event]] = [:]
     
     // Gives a string full of all the menus for this eatery today
@@ -119,8 +164,15 @@ public class Eatery: NSObject {
         
     }
     
-    // Tells if open at a specific time
-    // Where onDate means including time
+    /**
+    Tells if this Eatery is open at a specific time
+    
+    - parameter date: Specifically the time to check for
+    
+    - returns: true if this eatery has an event active at the given date and time
+     
+    - see: `isOpenForDate`
+    */
     public func isOpenOnDate(date: NSDate) -> Bool {
         let yesterday = NSDate(timeInterval: -1 * 24 * 60 * 60, sinceDate: date)
         
@@ -136,29 +188,60 @@ public class Eatery: NSObject {
         return false
     }
     
-    // Tells if eatery is open within the calendary date given
+    //
+    /**
+    Tells if eatery is open within the calendar date given. This is distinct from `isOpenOnDate` in that it does not check a specific time, just the day, month, and year.
+    
+    - parameter date: The date to check
+    
+    - returns: true of there is an event active at some point within the given calendar day
+    
+    - see: `isOpenOnDate`
+    */
     public func isOpenForDate(date: NSDate) -> Bool {
         let events = eventsOnDate(date)
         return events.count != 0
     }
     
-    // Tells if eatery is open now
+    /**
+    Is the eatery open now?
+    
+    - returns: true if the eatery is open at the present date and time
+    */
     public func isOpenNow() -> Bool {
         return isOpenOnDate(NSDate())
     }
     
-    // Tells if eatery is open at some point today
+    /**
+    Tells if eatery is open at some point today
+     
+    - returns: true if the eatery will be open at some point today or was already open
+    */
     public func isOpenToday() -> Bool {
         return isOpenForDate(NSDate())
     }
     
-    // Retrieves event instances for a specific day
+    /**
+    Retrieve event instances for a specific day
+    
+    - parameter date: The date for which you would like a list of events for
+    
+    - returns: A mapping from Event Name to Event for the given day.
+    */
     public func eventsOnDate(date: NSDate) -> [String: Event] {
         let dateString = Eatery.dateFormatter.stringFromDate(date)
         return events[dateString] ?? [:]
     }
 
-    // Retrieves the currently active event or the next event for a day/time
+    /**
+    Retrieve the currently active event or the next event for a day/time
+    
+    - parameter date: The date you would like the active event for
+    
+    - returns: The active event on a certain day/time, or nil if there was none.
+     For our purposes, "active" means currently running or will run soon. As in, if there
+     was no event running at exactly the date given but there will be one 15 minutes afterwards, that event would be returned. If the next event was over a day away, nil would be returned.
+    */
     public func activeEventForDate(date: NSDate) -> Event? {
         let tomorrow = NSDate(timeInterval: 24 * 60 * 60, sinceDate: date)
         

@@ -9,25 +9,33 @@
 import UIKit
 import SwiftyJSON
 
+/**
+ *  An Event of an Eatery such as Breakfast, Lunch, or Dinner
+ */
 public struct Event {
-    // Date of the event
+    /// Date and time that this event begins
     public let startDate: NSDate
     
+    /// Human-readable representation of `startDate`
     public let startDateFormatted: String
     
-    // End Date of the event
+    /// Date and time that this event ends
     public let endDate: NSDate
     
+    /// Human-readable repersentation of `endDate`
     public let endDateFormatted: String
     
-    // Description of the date
+    /// Short description of the Event
     public let desc: String
-    // Summary of the calendar
+
+    /// Summary of the event
     public let summary: String
-    // Category: Menu Item
+    
+    /// A mapping from "Category"->[Menu Items] where category could be something like
+    /// "Ice Cream Flavors" or "Traditional Hot Food"
     public let menu: [String: [MenuItem]]
     
-    public init(json: JSON) {
+    internal init(json: JSON) {
         desc = json[APIKey.Description.rawValue].stringValue
         summary = json[APIKey.Summary.rawValue].stringValue
         startDate = NSDate(timeIntervalSince1970: json[APIKey.StartTime.rawValue].doubleValue)
@@ -57,6 +65,13 @@ public struct Event {
         return items
     }
     
+    /**
+     Tells whether or not this specific event is occurring at some date and time
+     
+     - parameter date: The date for which to check if this event is active
+     
+     - returns: true if `date` is between the `startDate` and `endDate` of the event
+     */
     public func occurringOnDate(date: NSDate) -> Bool {
         return startDate.compare(date) != .OrderedDescending && endDate.compare(date) != .OrderedAscending
     }
