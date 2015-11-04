@@ -37,7 +37,7 @@ internal enum Router: URLStringConvertible {
     Keys for Cornell API
     These will be in the response dictionary
 */
-internal enum APIKey : String {
+public enum APIKey : String {
     // Top Level
     case Status    = "status"
     case Data      = "data"
