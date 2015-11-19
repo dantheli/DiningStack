@@ -1,6 +1,0 @@
-[submodule "DiningStack/external/Alamofire"]
-	path = DiningStack/external/Alamofire
-	url = https://github.com/Alamofire/Alamofire.git
-[submodule "DiningStack/external/SwiftyJSON"]
-	path = DiningStack/external/SwiftyJSON
-	url = https://github.com/SwiftyJSON/SwiftyJSON.git
