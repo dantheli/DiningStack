@@ -75,4 +75,30 @@ public struct Event {
     public func occurringOnDate(date: NSDate) -> Bool {
         return startDate.compare(date) != .OrderedDescending && endDate.compare(date) != .OrderedAscending
     }
+    
+    /**
+     Returns an iterable form of the entire menu for the event
+     
+     - returns: a list of tuples in the form (category,[item list]).
+     For each category we create a tuple containing the food category name as a string
+     and the food items available for the category as a string list. Used to easily iterate
+     over all items in the event menu. Ex: [("Entrees",["Chicken", "Steak", "Fish"]), ("Fruit", ["Apples"])]
+     */
+    public func getMenuIterable() -> [(String,[String])] {
+        var iterableMenu:[(String,[String])] = []
+        let keys = [String] (menu.keys)
+        for key in keys {
+            if let menuItems:[MenuItem] = menu[key] {
+                var menuList:[String] = []
+                for item in menuItems {
+                    menuList.append(item.name)
+                }
+                if menuList.count > 0 {
+                    let subMenu = (key,menuList)
+                    iterableMenu.append(subMenu)
+                }
+            }
+        }
+        return iterableMenu
+    }
 }

@@ -257,4 +257,33 @@ public class Eatery: NSObject {
         return next
     }
     
+    /**
+     Returns an iterable form of the entire hardcoded menu
+     
+     - returns: a list of tuples in the form (category,[item list]).
+     For each category we create a tuple containing the food category name as a string
+     and the food items available for the category as a string list. Used to easily iterate
+     over all items in the hardcoded menu. Ex: [("Entrees",["Chicken", "Steak", "Fish"]), ("Fruit", ["Apples"])]
+     */
+    public func getHardcodeMenuIterable() -> [(String,[String])] {
+        var iterableMenu:[(String,[String])] = []
+        if hardcodedMenu == nil {
+            return []
+        }
+        let keys = [String] (hardcodedMenu!.keys)
+        for key in keys {
+            if let menuItems:[MenuItem] = hardcodedMenu![key] {
+                var menuList:[String] = []
+                for item in menuItems {
+                    menuList.append(item.name)
+                }
+                if menuList.count > 0 {
+                    let subMenu = (key,menuList)
+                    iterableMenu.append(subMenu)
+                }
+            }
+        }
+        return iterableMenu
+    }
+    
  }
