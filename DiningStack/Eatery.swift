@@ -50,6 +50,7 @@ public enum EateryType: String {
     case FoodCourt        = "food court"
     case ConvenienceStore = "convenience store"
     case CoffeeShop       = "coffee shop"
+    case Bakery           = "bakery"
 }
 
 /**
