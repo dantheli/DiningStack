@@ -52,7 +52,7 @@ public enum APIKey : String {
     case Slug             = "slug"
     case Name             = "name"
     case NameShort        = "nameshort"
-    case EateryType       = "eateryType"
+    case EateryTypes       = "eateryTypes"
     case AboutShort       = "aboutshort"
     case Latitude         = "latitude"
     case Longitude        = "longitude"
