@@ -152,8 +152,8 @@ public class Eatery: NSObject {
         phone = json[APIKey.PhoneNumber.rawValue].stringValue
         
         //TODO: make the below line safe
-        area     = Area(rawValue: json[APIKey.CampusArea.rawValue][APIKey.ShortDescription.rawValue].stringValue)!
-        eateryType  = EateryType(rawValue: json[APIKey.EateryTypes.rawValue][0][APIKey.ShortDescription.rawValue].stringValue)!
+        area     = Area(rawValue: json[APIKey.CampusArea.rawValue][APIKey.ShortDescription.rawValue].stringValue) ?? .Unknown
+        eateryType  = EateryType(rawValue: json[APIKey.EateryTypes.rawValue][0][APIKey.ShortDescription.rawValue].stringValue) ?? .Unknown
         address  = json[APIKey.Address.rawValue].stringValue
         location = CLLocation(latitude: json[APIKey.Latitude.rawValue].doubleValue, longitude: json[APIKey.Longitude.rawValue].doubleValue)
         
