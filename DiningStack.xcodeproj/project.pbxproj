@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35D31669F5D832BCF67E7031 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E149B031C7C4B6F9580C4F2C /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		35D31669F5D832BCF67E7031 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E149B031C7C4B6F9580C4F2C /* Pods.framework */; };
 		FAF5CE771BE19C6E00C49EDE /* DiningStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF5CE761BE19C6E00C49EDE /* DiningStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF5CE7F1BE19CA600C49EDE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5CE7E1BE19CA600C49EDE /* DataManager.swift */; };
 		FAF5CE831BE19CAD00C49EDE /* Eatery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5CE801BE19CAD00C49EDE /* Eatery.swift */; };

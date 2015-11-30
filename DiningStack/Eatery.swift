@@ -32,6 +32,27 @@ public enum PaymentType: String {
 }
 
 /**
+ Different types of eateries on campus
+ 
+ - Unknown:          Unknown
+ - Dining:           All You Care to Eat Dining Halls
+ - Cafe:             Cafes
+ - Cart:             Carts + Food Trucks
+ - FoodCourt:        Food Courts (Variety of Food Selections)
+ - ConvenienceStore: Convenience Stores
+ - CoffeeShop:       Coffee Shops + Some Food
+ */
+public enum EateryType: String {
+    case Unknown          = ""
+    case Dining           = "all you care to eat"
+    case Cafe             = "cafe"
+    case Cart             = "cart"
+    case FoodCourt        = "food court"
+    case ConvenienceStore = "convenience store"
+    case CoffeeShop       = "coffee shop"
+}
+
+/**
  Represents a location on Cornell Campus
  
  - Unknown: Unknown
@@ -56,15 +77,21 @@ private func makeFormatter () -> NSDateFormatter {
 /// such as open times, menus, location, etc.
 public class Eatery: NSObject {
     private static let dateFormatter = makeFormatter()
-
+    
     /// Unique Identifier
     public let id: Int
     
     /// Human Readable name
     public let name: String
     
+    /// Human Readable short name
+    public let nameShort: String
+    
     /// Unique internal name
     public let slug: String
+    
+    /// Eatery Type
+    public let eateryType: EateryType
     
     /// Short description
     public let about: String // actually "aboutshort"
@@ -77,7 +104,7 @@ public class Eatery: NSObject {
     
     /// Exact Address
     public let address: String
-
+    
     /// Acceptable types of payment
     public let paymentMethods: [PaymentType]
     
@@ -118,12 +145,14 @@ public class Eatery: NSObject {
     internal init(json: JSON) {
         id    = json[APIKey.Identifier.rawValue].intValue
         name  = json[APIKey.Name.rawValue].stringValue
+        nameShort  = json[APIKey.NameShort.rawValue].stringValue
         slug  = json[APIKey.Slug.rawValue].stringValue
         about = json[APIKey.AboutShort.rawValue].stringValue
         phone = json[APIKey.PhoneNumber.rawValue].stringValue
         
         //TODO: make the below line safe
         area     = Area(rawValue: json[APIKey.CampusArea.rawValue][APIKey.ShortDescription.rawValue].stringValue)!
+        eateryType  = EateryType(rawValue: json[APIKey.EateryType.rawValue][APIKey.ShortDescription.rawValue].stringValue)!
         address  = json[APIKey.Address.rawValue].stringValue
         location = CLLocation(latitude: json[APIKey.Latitude.rawValue].doubleValue, longitude: json[APIKey.Longitude.rawValue].doubleValue)
         
@@ -157,14 +186,14 @@ public class Eatery: NSObject {
     }
     
     /**
-    Tells if this Eatery is open at a specific time
-    
-    - parameter date: Specifically the time to check for
-    
-    - returns: true if this eatery has an event active at the given date and time
+     Tells if this Eatery is open at a specific time
      
-    - see: `isOpenForDate`
-    */
+     - parameter date: Specifically the time to check for
+     
+     - returns: true if this eatery has an event active at the given date and time
+     
+     - see: `isOpenForDate`
+     */
     public func isOpenOnDate(date: NSDate) -> Bool {
         let yesterday = NSDate(timeInterval: -1 * 24 * 60 * 60, sinceDate: date)
         
@@ -196,50 +225,50 @@ public class Eatery: NSObject {
     }
     
     /**
-    Is the eatery open now?
-    
-    - returns: true if the eatery is open at the present date and time
-    */
+     Is the eatery open now?
+     
+     - returns: true if the eatery is open at the present date and time
+     */
     public func isOpenNow() -> Bool {
         return isOpenOnDate(NSDate())
     }
     
     /**
-    Tells if eatery is open at some point today
+     Tells if eatery is open at some point today
      
-    - returns: true if the eatery will be open at some point today or was already open
-    */
+     - returns: true if the eatery will be open at some point today or was already open
+     */
     public func isOpenToday() -> Bool {
         return isOpenForDate(NSDate())
     }
     
     /**
-    Retrieve event instances for a specific day
-    
-    - parameter date: The date for which you would like a list of events for
-    
-    - returns: A mapping from Event Name to Event for the given day.
-    */
+     Retrieve event instances for a specific day
+     
+     - parameter date: The date for which you would like a list of events for
+     
+     - returns: A mapping from Event Name to Event for the given day.
+     */
     public func eventsOnDate(date: NSDate) -> [String: Event] {
         let dateString = Eatery.dateFormatter.stringFromDate(date)
         return events[dateString] ?? [:]
     }
-
+    
     /**
-    Retrieve the currently active event or the next event for a day/time
-    
-    - parameter date: The date you would like the active event for
-    
-    - returns: The active event on a certain day/time, or nil if there was none.
+     Retrieve the currently active event or the next event for a day/time
+     
+     - parameter date: The date you would like the active event for
+     
+     - returns: The active event on a certain day/time, or nil if there was none.
      For our purposes, "active" means currently running or will run soon. As in, if there
      was no event running at exactly the date given but there will be one 15 minutes afterwards, that event would be returned. If the next event was over a day away, nil would be returned.
-    */
+     */
     public func activeEventForDate(date: NSDate) -> Event? {
         let tomorrow = NSDate(timeInterval: 24 * 60 * 60, sinceDate: date)
         
         var timeDifference = DBL_MAX
         var next: Event? = nil
-                
+        
         for now in [date, tomorrow] {
             let events = eventsOnDate(now)
             
@@ -286,4 +315,5 @@ public class Eatery: NSObject {
         return iterableMenu
     }
     
- }
+}
+

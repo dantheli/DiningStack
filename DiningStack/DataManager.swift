@@ -13,8 +13,8 @@ import SwiftyJSON
 let separator = ":------------------------------------------"
 
 /**
-Router Endpoints enum
-*/
+ Router Endpoints enum
+ */
 internal enum Router: URLStringConvertible {
     static let baseURLString = "https://now.dining.cornell.edu/api/1.0/dining"
     case Root
@@ -23,10 +23,10 @@ internal enum Router: URLStringConvertible {
     var URLString: String {
         let path: String = {
             switch self {
-                case .Root:
-                    return "/"
-                case .Eateries:
-                    return "/eateries.json"
+            case .Root:
+                return "/"
+            case .Eateries:
+                return "/eateries.json"
             }
         }()
         return Router.baseURLString + path
@@ -34,9 +34,9 @@ internal enum Router: URLStringConvertible {
 }
 
 /**
-    Keys for Cornell API
-    These will be in the response dictionary
-*/
+ Keys for Cornell API
+ These will be in the response dictionary
+ */
 public enum APIKey : String {
     // Top Level
     case Status    = "status"
@@ -52,6 +52,7 @@ public enum APIKey : String {
     case Slug             = "slug"
     case Name             = "name"
     case NameShort        = "nameshort"
+    case EateryType       = "eateryType"
     case AboutShort       = "aboutshort"
     case Latitude         = "latitude"
     case Longitude        = "longitude"
@@ -74,7 +75,7 @@ public enum APIKey : String {
     case Menu             = "menu"
     case Summary          = "calSummary"
     
-    // Events/Payment/CampusArea
+    // Events/Payment/CampusArea/EateryTypes
     case Description      = "descr"
     case ShortDescription = "descrshort"
     
@@ -122,10 +123,10 @@ public class DataManager: NSObject {
      for all eateries.
      
      - parameter force:      Boolean indicating that the data should be refreshed even if
-             the cache is invalid.
+     the cache is invalid.
      - parameter completion: Completion block called upon successful receipt and parsing
-         of the data or with an error if there was one. Use `-eateries` to get the parsed
-         response.
+     of the data or with an error if there was one. Use `-eateries` to get the parsed
+     response.
      */
     public func fetchEateries(force: Bool, completion: ((error: ErrorType?) -> (Void))?) {
         if eateries.count > 0 && !force {
@@ -134,7 +135,7 @@ public class DataManager: NSObject {
         }
         
         let req = Alamofire.request(.GET, Router.Eateries)
-
+        
         func processData (data: NSData) {
             self.eateries = []
             
@@ -192,8 +193,7 @@ public class DataManager: NSObject {
             } else {
                 completion?(error: data.error)
             }
-
+            
         }
     }
 }
-
