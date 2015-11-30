@@ -11,6 +11,23 @@ import SwiftyJSON
 import CoreLocation
 
 /**
+ Different meals served by eateries
+ 
+ - Breakfast: Breakfast
+ - Brunch:    Brunch
+ - Lunch:     Lunch
+ - Dinner:    Dinner
+ - Other:     Unknown
+ */
+public enum Meal: String {
+    case Breakfast = "Breakfast"
+    case Brunch    = "Brunch"
+    case Lunch     = "Lunch"
+    case Dinner    = "Dinner"
+    case Other     = ""
+}
+
+/**
  Assorted types of payment accepted by an Eatery
  
  - BRB:         Big Red Bucks
