@@ -15,6 +15,7 @@ import CoreLocation
  
  - Breakfast: Breakfast
  - Brunch:    Brunch
+ - LiteLunch: Lite Lunch
  - Lunch:     Lunch
  - Dinner:    Dinner
  - Other:     Unknown
@@ -22,6 +23,7 @@ import CoreLocation
 public enum Meal: String {
     case Breakfast = "Breakfast"
     case Brunch    = "Brunch"
+    case LiteLunch = "Lite Lunch"
     case Lunch     = "Lunch"
     case Dinner    = "Dinner"
     case Other     = ""
