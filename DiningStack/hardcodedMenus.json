@@ -425,6 +425,17 @@
             ]
         }
     ],
+    "Hot-Dog-Cart": [
+        {
+            "category": "Hot Dogs",
+            "items": [
+                {
+                    "healthy": false,
+                    "item": "Hot dawgs."
+                }
+            ]
+        }
+    ],
     "Rustys": [
         {
             "category": "General",
