@@ -427,7 +427,7 @@
     ],
     "Hot-Dog-Cart": [
         {
-            "category": "Hot Dogs",
+            "category": "General",
             "items": [
                 {
                     "healthy": false,
