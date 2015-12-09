@@ -904,5 +904,44 @@
             ],
             "category": "General"
         }
+    ],
+     "Jansons-Market": [
+        {
+            "items": [
+                {
+                    "healthy": 0,
+                    "item": "Bubble Tea"
+                },
+                {
+                    "healthy": 0,
+                    "item": "Grab-n-Go"
+                },
+                {
+                    "healthy": 0,
+                    "item": "Hot Cocoa"
+                },
+                {
+                    "healthy": 0,
+                    "item": "Smoothies"
+                },
+                {
+                    "healthy": 0,
+                    "item": "Pepsi Beverages"
+                },
+                {
+                    "healthy": 1,
+                    "item": "Tazo Tea"
+                },
+                {
+                    "healthy": 1,
+                    "item": "Sushi"
+                },
+                {
+                    "healthy": 0,
+                    "item": "Peanut Butter Sandwich Bar"
+                }
+            ],
+            "category": "General"
+        }
     ]
 }
