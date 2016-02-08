@@ -16,6 +16,7 @@
 		6586E6341C6913B500A5A56C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E149B031C7C4B6F9580C4F2C /* Pods.framework */; };
 		6586E6361C6913B500A5A56C /* DiningStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF5CE761BE19C6E00C49EDE /* DiningStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6586E6381C6913B500A5A56C /* hardcodedMenus.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF5CFE51BE19F1500C49EDE /* hardcodedMenus.json */; };
+		6586E6421C6937C400A5A56C /* DiningStack WatchKit Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6586E6411C6937C400A5A56C /* DiningStack WatchKit Info.plist */; };
 		FAF5CE771BE19C6E00C49EDE /* DiningStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF5CE761BE19C6E00C49EDE /* DiningStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF5CE7F1BE19CA600C49EDE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5CE7E1BE19CA600C49EDE /* DataManager.swift */; };
 		FAF5CE831BE19CAD00C49EDE /* Eatery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5CE801BE19CAD00C49EDE /* Eatery.swift */; };
@@ -29,6 +30,7 @@
 		376C99F3DBCCAD2B8593D7C3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6586E63D1C6913B500A5A56C /* DiningStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiningStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6586E63E1C6913B500A5A56C /* DiningStack copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DiningStack copy-Info.plist"; path = "/Users/daniel/AppDev/Projects/CUAppDev/DiningStack/DiningStack copy-Info.plist"; sourceTree = "<absolute>"; };
+		6586E6411C6937C400A5A56C /* DiningStack WatchKit Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DiningStack WatchKit Info.plist"; sourceTree = "<group>"; };
 		AEDCE38C23C8B1408AD24070 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E149B031C7C4B6F9580C4F2C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF5CE731BE19C6E00C49EDE /* DiningStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiningStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 				FAF5CE761BE19C6E00C49EDE /* DiningStack.h */,
 				FAF5CFE51BE19F1500C49EDE /* hardcodedMenus.json */,
 				FAF5CE781BE19C6E00C49EDE /* Info.plist */,
+				6586E6411C6937C400A5A56C /* DiningStack WatchKit Info.plist */,
 			);
 			path = DiningStack;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6586E6381C6913B500A5A56C /* hardcodedMenus.json in Resources */,
+				6586E6421C6937C400A5A56C /* DiningStack WatchKit Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +332,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "DiningStack copy-Info.plist";
+				INFOPLIST_FILE = "DiningStack/DiningStack WatchKit Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -350,7 +354,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "DiningStack copy-Info.plist";
+				INFOPLIST_FILE = "DiningStack/DiningStack WatchKit Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
