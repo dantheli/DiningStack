@@ -128,7 +128,7 @@ public class Eatery: NSObject {
         location = CLLocation(latitude: json[APIKey.Latitude.rawValue].doubleValue, longitude: json[APIKey.Longitude.rawValue].doubleValue)
         
         paymentMethods = json[APIKey.Payment.rawValue].arrayValue.map({ (j) in
-            return PaymentType(rawValue: j.stringValue) ?? PaymentType.Other
+            return PaymentType(rawValue: j[APIKey.ShortDescription.rawValue].stringValue) ?? PaymentType.Other
         })
         
         if let d = kEateryGeneralMenus[slug] {
