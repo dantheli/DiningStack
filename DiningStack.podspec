@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
   s.author           = { "CUAppDev" => "info@cuappdev.org" }
   s.source           = { :git => "https://github.com/cuappdev/DiningStack.git", :tag => s.version }
 
-  s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
+  s.watchos.deployment_target = '2.0'
   s.requires_arc = true
 
   s.source_files = 'DiningStack/*.swift'
