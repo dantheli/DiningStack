@@ -129,12 +129,13 @@ public class DataManager: NSObject {
     private (set) public var eateries: [Eatery] = []
     
     /// Timestamp of last fetch from Cornell API
-    public static var dateLastFetched: NSDate?
+    public var dateLastFetched: NSDate?
     
     /// Save
     public func readEateriesFromDisk() -> Bool {
         let path = getDocumentsDirectory().stringByAppendingString(FileName)
         if let data = NSData(contentsOfFile: path) {
+            eateries.removeAll()
             
             let json = JSON(data: data)
             
@@ -143,6 +144,8 @@ public class DataManager: NSObject {
                 let eatery = Eatery(json: eateryJSON.1)
                 self.eateries.append(eatery)
             }
+            
+            dateLastFetched = NSDate()
             
             return true
         } else {
