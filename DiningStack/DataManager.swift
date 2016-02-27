@@ -108,15 +108,47 @@ enum DataError: ErrorType {
     case ServerError
 }
 
+/// FileName for JSON data location
+let FileName = "eateryJSON.dat"
+
+/**
+ Returns the path for user documents directory
+*/
+func getDocumentsDirectory() -> String {
+    let path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
+    return path
+}
 
 /// Top-level class to communicate with Cornell Dining
 public class DataManager: NSObject {
     
+    /// Gives a shared instance of `DataManager`
+    public static let sharedInstance = DataManager()
+    
     /// List of all the Dining Locations with parsed events and menus
     private (set) public var eateries: [Eatery] = []
     
-    /// Gives a shared instance of `DataManager`
-    public static let sharedInstance = DataManager()
+    /// Timestamp of last fetch from Cornell API
+    public static var dateLastFetched: NSDate?
+    
+    /// Save
+    public func readEateriesFromDisk() -> Bool {
+        let path = getDocumentsDirectory().stringByAppendingString(FileName)
+        if let data = NSData(contentsOfFile: path) {
+            
+            let json = JSON(data: data)
+            
+            let eateryList = json["data"]["eateries"]
+            for eateryJSON in eateryList {
+                let eatery = Eatery(json: eateryJSON.1)
+                self.eateries.append(eatery)
+            }
+            
+            return true
+        } else {
+            return false
+        }
+    }
     
     /**
      Sends a GET request to the Cornell API to get the events
@@ -153,6 +185,9 @@ public class DataManager: NSObject {
                 let eatery = Eatery(json: eateryJSON.1)
                 self.eateries.append(eatery)
             }
+            
+            let path = getDocumentsDirectory().stringByAppendingString(FileName)
+            data.writeToFile(path, atomically: false)
             
             completion?(error: nil)
         }
