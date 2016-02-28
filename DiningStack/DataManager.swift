@@ -157,8 +157,6 @@ public class DataManager: NSObject {
             let eateryList = json["data"]["eateries"]
             self.eateries = eateryList.map { Eatery(json: $0.1) }
             
-            dateLastFetched = NSDate()
-            
             return true
         } else {
             return false
@@ -195,6 +193,8 @@ public class DataManager: NSObject {
             
             let eateryList = json["data"]["eateries"]
             self.eateries = eateryList.map { Eatery(json: $0.1) }
+            
+            dateLastFetched = NSDate()
             
             let path = getDocumentsDirectory().stringByAppendingString(FileName)
             data.writeToFile(path, atomically: false)
