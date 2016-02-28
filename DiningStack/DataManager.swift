@@ -151,15 +151,11 @@ public class DataManager: NSObject {
     public func readEateriesFromDisk() -> Bool {
         let path = getDocumentsDirectory().stringByAppendingString(FileName)
         if let data = NSData(contentsOfFile: path) {
-            eateries.removeAll()
             
             let json = JSON(data: data)
             
             let eateryList = json["data"]["eateries"]
-            for eateryJSON in eateryList {
-                let eatery = Eatery(json: eateryJSON.1)
-                self.eateries.append(eatery)
-            }
+            self.eateries = eateryList.map { Eatery(json: $0.1) }
             
             dateLastFetched = NSDate()
             
@@ -188,8 +184,6 @@ public class DataManager: NSObject {
         let req = Alamofire.request(.GET, Router.Eateries)
         
         func processData (data: NSData) {
-            self.eateries = []
-            
             
             let json = JSON(data: data)
             
@@ -200,10 +194,7 @@ public class DataManager: NSObject {
             }
             
             let eateryList = json["data"]["eateries"]
-            for eateryJSON in eateryList {
-                let eatery = Eatery(json: eateryJSON.1)
-                self.eateries.append(eatery)
-            }
+            self.eateries = eateryList.map { Eatery(json: $0.1) }
             
             let path = getDocumentsDirectory().stringByAppendingString(FileName)
             data.writeToFile(path, atomically: false)
