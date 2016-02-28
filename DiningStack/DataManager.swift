@@ -129,9 +129,25 @@ public class DataManager: NSObject {
     private (set) public var eateries: [Eatery] = []
     
     /// Timestamp of last fetch from Cornell API
-    public var dateLastFetched: NSDate?
+    public var dateLastFetched: NSDate? {
+        get {
+            let defaults = NSUserDefaults.standardUserDefaults()
+            if let date = defaults.objectForKey("dateLastFetched") as? NSDate {
+                return date
+            } else {
+                return nil
+            }
+        } set {
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setObject(newValue, forKey: "dateLastFetched")
+        }
+    }
     
-    /// Save
+    /**
+     Reads eateries from user documents and stores them in the 'eateries' property.
+     
+     Returns: Bool whether the operation succeeded
+     */
     public func readEateriesFromDisk() -> Bool {
         let path = getDocumentsDirectory().stringByAppendingString(FileName)
         if let data = NSData(contentsOfFile: path) {
@@ -154,8 +170,8 @@ public class DataManager: NSObject {
     }
     
     /**
-     Sends a GET request to the Cornell API to get the events
-     for all eateries.
+     Sends a GET request to the Cornell API to get the events for all eateries and
+     stores them in user documents.
      
      - parameter force:      Boolean indicating that the data should be refreshed even if
      the cache is invalid.
