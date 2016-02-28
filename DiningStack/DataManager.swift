@@ -109,7 +109,7 @@ enum DataError: ErrorType {
 }
 
 /// FileName for JSON data location
-let FileName = "eateryJSON.dat"
+let FileName = "/eateryJSON.dat"
 
 /**
  Returns the path for user documents directory
@@ -197,7 +197,12 @@ public class DataManager: NSObject {
             dateLastFetched = NSDate()
             
             let path = getDocumentsDirectory().stringByAppendingString(FileName)
-            data.writeToFile(path, atomically: false)
+            
+            do {
+                try data.writeToFile(path, options: .DataWritingAtomic)
+            } catch {
+                completion?(error: error)
+            }
             
             completion?(error: nil)
         }
