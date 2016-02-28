@@ -29,7 +29,6 @@
 /* Begin PBXFileReference section */
 		376C99F3DBCCAD2B8593D7C3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6586E63D1C6913B500A5A56C /* DiningStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiningStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6586E63E1C6913B500A5A56C /* DiningStack copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DiningStack copy-Info.plist"; path = "/Users/daniel/AppDev/Projects/CUAppDev/DiningStack/DiningStack copy-Info.plist"; sourceTree = "<absolute>"; };
 		6586E6411C6937C400A5A56C /* DiningStack WatchKit Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DiningStack WatchKit Info.plist"; sourceTree = "<group>"; };
 		AEDCE38C23C8B1408AD24070 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E149B031C7C4B6F9580C4F2C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +87,6 @@
 				FAF5CE741BE19C6E00C49EDE /* Products */,
 				F094F49CA583D197F6770E06 /* Pods */,
 				A4EC2C45F6C92057825E6F5C /* Frameworks */,
-				6586E63E1C6913B500A5A56C /* DiningStack copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
