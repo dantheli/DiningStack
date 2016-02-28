@@ -284,12 +284,13 @@ public class Eatery: NSObject {
      was no event running at exactly the date given but there will be one 15 minutes afterwards, that event would be returned. If the next event was over a day away, nil would be returned.
      */
     public func activeEventForDate(date: NSDate) -> Event? {
+        let yesterday = NSDate(timeInterval: (-24 * 60 * 60), sinceDate: date)
         let tomorrow = NSDate(timeInterval: 24 * 60 * 60, sinceDate: date)
         
         var timeDifference = DBL_MAX
         var next: Event? = nil
         
-        for now in [date, tomorrow] {
+        for now in [yesterday, date, tomorrow] {
             let events = eventsOnDate(now)
             
             for (_, event) in events {
