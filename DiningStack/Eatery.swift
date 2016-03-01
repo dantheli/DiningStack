@@ -98,6 +98,10 @@ private func makeFormatter () -> NSDateFormatter {
 public class Eatery: NSObject {
     private static let dateFormatter = makeFormatter()
     
+    /// Campus names and open or closed names for sorting
+    public static let campusNames = ["Central", "West", "North"]
+    public static let openNames = ["Open", "Closed"]
+
     /// Unique Identifier
     public let id: Int
     
